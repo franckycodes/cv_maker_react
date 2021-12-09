@@ -1,11 +1,21 @@
 :root {
     --skillsBg: #44aadd;
+    --skillsLevelContainer: #eee;
+    --borderColor: #dddddd;
 }
 
 body {
     text-align: center;
 }
-
+@font-face 
+{
+    font-family: "OpenSans";
+    src: url("./fonts/OpenSans-Regular.ttf");
+}
+*
+{
+    font-family: "OpenSans";
+}
 .cvPicture {
     display: block;
     margin: 0 auto;
@@ -20,6 +30,10 @@ body {
 .skillsLevelContainer {
     width: 100%;
     height: 5px;
+    background: var(--skillsLevelContainer);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .skillsLevel {
@@ -27,13 +41,39 @@ body {
     height: 100%;
     background: var(--skillsBg);
 }
-
+.hideBt 
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--skillsBg);
+    font-weight: bold;
+    cursor: pointer;
+}
 .editorContainer {
     display: inline-block;
     vertical-align: top;
     width: 30%;
+    min-width: 250px;
+    padding: 10px;
+    background: var(--skillsLevelContainer);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 100px;
 }
-
+.editorContainer input 
+{
+    display: block;
+    width: 80%;
+    min-width: 80%;
+    border: 1px solid var(--borderColor);
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
 .previewContainer {
     display: inline-block;
     vertical-align: top;
@@ -41,8 +81,20 @@ body {
     max-width: 50%;
     text-align: left;
     padding: 25px;
+    margin-left: 250px;
+
 }
 .previewContainer h1 
 {
     text-align: center;
+}
+
+.previewContainer h2 , 
+.previewContainer h1
+{
+    text-transform: uppercase;
+}
+a:link, a:visited 
+{
+    color: var(--skillsBg);
 }

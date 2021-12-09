@@ -5,7 +5,7 @@ function AllSkills(prop)
     const [state, setState]=useState("");
 
     return (<div><div className="allSkills">
-        <p>Total skills: {prop.skillsProp.length}</p>
+        {/* <p>Total skills: {prop.skillsProp.length}</p> */}
     {prop.skillsProp.map((res)=>{
 
         return <div className="skillsContainer">

@@ -7,7 +7,7 @@ function Education(prop)
 
     return (<div>
 
-        <p>Total educations: {prop.educationProp.length}</p>
+        {/* <p>Total educations: {prop.educationProp.length}</p> */}
 
         <div> 
             {prop.educationProp.map((res)=>{

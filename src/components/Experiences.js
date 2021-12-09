@@ -6,7 +6,7 @@ function Experiences(prop)
 
     return (<div>
 
-        <p>Total experiences: {prop.xpProp.length}</p>
+        {/* <p>Total experiences: {prop.xpProp.length}</p> */}
 
 
         {prop.xpProp.map((res)=>{
